@@ -1,0 +1,16 @@
+export const color = {
+  main: '#2D36A1',
+  sectionTitleColor: '#373053',
+  sectionSubTitleColor: '#8492a6',
+  acceuilBgColor: '#2D36A1',
+  authorSectionBgColor: '#faf8fb',
+  downloadBtnBgColor: '#ff7101',
+  ctaBgColor: '#5B95F4',
+  ctaBtnColor: '#ffffff',
+  ctaCoverBgColor: '#70a3f5',
+  boxShadowColor: 'rgba(101, 93, 93, 0.16)',
+  footerBgColor: '#2d36a1',
+  footerLinkHoverColor: '#ff7101',
+  copyrightColor: '#d8dbfc',
+  copyrightBorderColor: '#8492a6',
+}
