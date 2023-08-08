@@ -10,7 +10,7 @@ const Section = styled.section`
   @media (max-width: 767px) {
     padding: 150px 0;
   }
-  @media (min-width: 768px) and (max-width: 1200px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     padding-top: 190px;
     padding-bottom: 160px;
   }
@@ -57,13 +57,13 @@ function Accueil() {
       <Section>
         <div className="container">
           <Title>
-            There is No Friend As <Br /> Loyal as a book.
+            Il n'y a pas d'ami plus <Br /> Loyal qu'un livre.
           </Title>
           <div className="row justify-content-center">
             <SubTitle className="col-12 col-md-8 col-xl-6">
-              we have on the web development market since 2000 and have been
-              growing ever since. A design studio founded in London and expanded
-              our services.
+              nous sommes présents sur le marché du développement web depuis
+              2000 et n'avons cessé de depuis lors. Un studio de design a été
+              fondé à Londres et a élargi nos services.
             </SubTitle>
           </div>
           <DownloadBtn />

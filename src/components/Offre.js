@@ -4,6 +4,7 @@ import { styled } from 'styled-components'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import { color } from '../untils/color'
 
 const settings = {
   dots: true,
@@ -81,6 +82,10 @@ const DownloadBtn = styled.button`
   transition: 350ms ease-in-out;
   border-radius: 4px;
   overflow: hidden;
+
+  &:hover {
+    background-color: ${color.acceuilBgColor};
+  }
 `
 
 function Offre() {
@@ -104,9 +109,7 @@ function Offre() {
                       <List>track energy costs </List>
                       <List id="last">predictive dialing </List>
                     </ul>
-                    <DownloadBtn className="btn" color={borderColor}>
-                      Download
-                    </DownloadBtn>
+                    <DownloadBtn color={borderColor}>Télécharger</DownloadBtn>
                   </ContentContainer>
                 </div>
               ))}

@@ -127,11 +127,11 @@ function About() {
         <div className="container">
           <div className="row justify-content-center align-items-center">
             <div className="col-12 col-lg-6">
-              <SectionTitle>About The Book</SectionTitle>
+              <SectionTitle>À Propos du Livre</SectionTitle>
               <SubTitleSection>
-                After all, as described in Web Design Trends vision dominates.
-                power of simple and communication each make a lasting
-                impression.
+                Après tout, comme le décrit le document Tendances en matière de
+                conception de sites web, la vision domine. Le pouvoir de la
+                simplicité et de la communication fait une impression durable.
               </SubTitleSection>
               <div className="row">
                 {AboutElements.map(

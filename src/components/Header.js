@@ -7,9 +7,8 @@ import { color } from '../untils/color'
 import { slideDownAnimation } from '../untils/animations'
 
 const Navigation = styled.nav`
-  @media (min-width: 1400px) {
-    margin-left: 10%;
-    margin-right: 10%;
+  @media (max-width: 1199px) {
+    padding: 0;
   }
 `
 
@@ -19,55 +18,54 @@ const ElementContainer = styled.div`
   }
 `
 const LogoContainer = styled.a`
-  @media (max-width: 400px) {
-    width: 70%;
-    padding: 8% 5%;
-  }
-  @media (min-width: 401px) and (max-width: 767px) {
-    padding: 5%;
-  }
+  padding: 20px;
+
   @media (min-width: 768px) and (max-width: 991px) {
-    padding: 2%;
+    padding: 10px;
+  }
+
+  img {
+    @media (max-width: 425px) {
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      width: 100%;
+    }
   }
 `
 
 const ToggleBtn = styled.span`
-  padding: 0;
   border: 0;
-  @media (max-width: 400px) {
-    padding: 8% 5%;
-  }
-  @media (min-width: 401px) and (max-width: 767px) {
-    padding: 5%;
-  }
+
+  padding: 20px;
+
   @media (min-width: 768px) and (max-width: 991px) {
-    padding: 2%;
+    padding: 10px;
   }
 `
 
 const ListContainer = styled.div`
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
     background-color: white;
-    padding-bottom: 5%;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    margin-top: 10px;
   }
 `
 
 const List = styled.ul`
   text-align: center;
-  margin-left: 20%;
-  margin-right: 5%;
-  @media (max-width: 991px) {
+
+  @media (max-width: 1199px) {
     margin: 0;
     text-align: start;
     padding: 0 15px;
   }
-  @media (min-width: 992px) {
-    margin-left: 5%;
-    margin-right: 2%;
-  }
+
   @media (min-width: 1200px) {
-    margin-left: 20%;
-    margin-right: 5%;
+    margin-left: 20px;
+    margin-right: 5px;
   }
   @media (min-width: 401px) and (max-width: 991px) {
     padding: 15px;
@@ -76,8 +74,13 @@ const List = styled.ul`
 
 const BouttonContainer = styled.div`
   text-align: center;
-  @media (max-width: 991px) {
-    padding: 0 20px;
+  @media (max-width: 767px) {
+    padding: 20px 0;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding: 10px;
+    margin-left: 15px;
   }
 `
 
@@ -95,6 +98,59 @@ function Header() {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
+
+  const [headerHeight, setHeaderHeight] = useState(20) // Hauteur par défaut pour les grands écrans
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    // Fonction pour mettre à jour la hauteur de l'en-tête en fonction de la taille de l'écran
+    const updateHeaderHeight = () => {
+      const screenWidth = window.innerWidth
+      setWindowWidth(screenWidth) // Met à jour la largeur de l'écran dans l'état
+    }
+
+    // Ajoutez un écouteur d'événement pour détecter les changements de taille d'écran
+    window.addEventListener('resize', updateHeaderHeight)
+
+    // Nettoyage : supprimez l'écouteur lors de la suppression du composant
+    return () => {
+      window.removeEventListener('resize', updateHeaderHeight)
+    }
+  }, [])
+
+  useEffect(() => {
+    // Met à jour la hauteur de l'en-tête en fonction de la largeur de l'écran actuelle
+    if (windowWidth < 992) {
+      setHeaderHeight(50)
+    } else if (windowWidth >= 992 && windowWidth < 1200) {
+      setHeaderHeight(100)
+    } else {
+      setHeaderHeight(80)
+    }
+  }, [windowWidth])
+
+  const handleClick = (event, targetId, targetHref) => {
+    event.preventDefault()
+
+    if (targetHref === '#') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
+    } else {
+      const targetElement = document.getElementById(targetId)
+
+      if (targetElement) {
+        const elementPosition = targetElement.getBoundingClientRect().top
+        const offsetPosition = elementPosition - headerHeight
+
+        window.scrollBy({
+          top: offsetPosition,
+          behavior: 'smooth',
+        })
+      }
+    }
+  }
 
   const Section = styled.section`
     position: fixed;
@@ -128,7 +184,7 @@ function Header() {
       color: ${onTop ? color.ctaBtnColor : color.main};
     }
 
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
       margin-right: 0;
       padding: 15px 10px;
       color: ${color.sectionTitleColor};
@@ -167,7 +223,7 @@ function Header() {
         : color.acceuilBgColor};
     }
 
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
       background-color: ${color.footerLinkHoverColor};
       width: 100%;
       border: none;
@@ -184,14 +240,13 @@ function Header() {
       <Section className="row">
         <div>
           <div className="container p-0">
-            <Navigation className="navbar navbar-expand-lg">
+            <Navigation className="navbar navbar-expand-xl">
               <ElementContainer className="container-fluid">
-                <LogoContainer className="" href="/">
-                  <img
-                    src={onTop ? logoLight : logoDark}
-                    alt="Ebookyo Logo"
-                    className="w-100"
-                  />
+                <LogoContainer
+                  className="col-8 col-md-5 col-xl-3 col-xxl-3"
+                  href="/"
+                >
+                  <img src={onTop ? logoLight : logoDark} alt="Ebookyo Logo" />
                 </LogoContainer>
                 <ToggleBtn
                   className="navbar-toggler"
@@ -209,17 +264,25 @@ function Header() {
                   className="collapse navbar-collapse  "
                   id="navbarNav"
                 >
-                  <List className="navbar-nav">
+                  <List className="navbar-nav col justify-content-end">
                     {NavMenu.map(({ id, title, href }) => (
                       <li className="nav-item " key={id}>
-                        <Link className="nav-link" href={href}>
+                        <Link
+                          className="nav-link"
+                          href={href}
+                          onClick={(e) => handleClick(e, id, href)}
+                        >
                           {title}
                         </Link>
                       </li>
                     ))}
                   </List>
                   <BouttonContainer>
-                    <DownloadBtn BouttonStyle={BouttonStyle} />
+                    <div className="row justify-content-center justify-content-md-start">
+                      <div className="col-8 col-md-4">
+                        <DownloadBtn BouttonStyle={BouttonStyle} />
+                      </div>
+                    </div>
                   </BouttonContainer>
                 </ListContainer>
               </ElementContainer>
@@ -232,20 +295,3 @@ function Header() {
 }
 
 export default Header
-/**
- * Pour links
- * /*Retravaillé cette partie du code
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 1px;
-      background-color: white;
-      transition: width 300ms;
-    }
-    &:hover::after {
-      width: ${(props) => (props.ids === 'home' ? 0 : '100%')};
-      border-bottom: solid 4px ${onTop ? 'white' : 'black'};
-    }*/

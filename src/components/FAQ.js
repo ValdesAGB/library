@@ -29,11 +29,6 @@ const Question = styled.div`
   }
 `
 
-const Icone = styled.i`
-  transform: rotate(180deg);
-  transition: all 0.3s ease;
-`
-
 const Answer = styled.div`
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   font-family: 'Source Sans Pro', sans-serif;

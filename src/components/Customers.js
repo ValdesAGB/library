@@ -95,11 +95,11 @@ function Customers() {
       <Section id="testimonials">
         <div className="container">
           <div className="row justify-content-center mb-5">
-            <SectionTitle>Customer Stories</SectionTitle>
+            <SectionTitle>Témoignages Clients</SectionTitle>
             <SubTitleSection className="col-12 col-md-8 col-lg-6">
-              This should be used to tell a story and let your users know a
-              little more about your product or service. How can you benefit
-              them?
+              Elle doit être utilisée pour raconter une histoire et permettre à
+              vos utilisateurs d'en savoir un peu plus sur votre produit ou
+              service. Quels sont les avantages que vous pouvez leur apporter ?{' '}
             </SubTitleSection>
           </div>
           <div className="row">

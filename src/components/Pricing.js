@@ -69,11 +69,11 @@ function Pricing() {
       <Section id="pricing">
         <Container className="container border-top">
           <SectionHead className="row justify-content-center ">
-            <SectionTitle>Our Best Pricing Plan</SectionTitle>
+            <SectionTitle>Notre Meilleur Plan Tarifaire</SectionTitle>
             <SubTitleSection className="col-12 col-lg-6">
-              This should be used to tell a story and let your users know a
-              little more about your product or service. How can you benefit
-              them?
+              Elle doit être utilisée pour raconter une histoire et permettre à
+              vos utilisateurs d'en savoir un peu plus sur votre produit ou
+              service. Quels sont les avantages que vous pouvez leur apporter ?
             </SubTitleSection>
           </SectionHead>
           <div className="row align-items-center">

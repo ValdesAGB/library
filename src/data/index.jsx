@@ -13,8 +13,8 @@ export const FeaturesElements = [
       'https://landing.zytheme.com/ebookyo/assets/images/icons/bg-icon-1.svg',
     icone:
       'https://landing.zytheme.com/ebookyo/assets/images/icons/icon-dollar.svg',
-    title: 'Innovation Ideas',
-    text: 'We understand the importance of approaching each work integrally and believe in the power of simple and easy communication.',
+    title: "Idées d'innovation",
+    text: "Nous comprenons l'importance d'aborder chaque travail de manière globale et nous croyons au pouvoir d'une communication simple et facile.",
   },
   {
     id: '2',
@@ -23,7 +23,7 @@ export const FeaturesElements = [
     icone:
       'https://landing.zytheme.com/ebookyo/assets/images/icons/icon-cup.svg',
     title: 'Success Stories',
-    text: 'Your logo is the very heart of your identity and branding, let our designers deliver the perfect & dreamy design, make a lasting impression.',
+    text: 'Votre logo est le cœur même de votre identité et de votre marque, laissez nos designers vous livrer le design parfait et rêvé, pour une impression durable.',
   },
   {
     id: '3',
@@ -32,7 +32,7 @@ export const FeaturesElements = [
     icone:
       'https://landing.zytheme.com/ebookyo/assets/images/icons/icon-delivery.svg',
     title: 'Leadership Skills',
-    text: 'What separates our agency from all other web design agencies is the ability to offer the most Friendly Experience you can imagine.',
+    text: "Ce qui distingue notre agence de toutes les autres agences de conception de sites web, c'est sa capacité à offrir l'expérience la plus conviviale que vous puissiez imaginer.",
   },
 ]
 
@@ -41,7 +41,7 @@ export const AboutElements = [
     id: '1',
     icone: svg.books,
     level: 100,
-    designation: 'Total Pages',
+    designation: 'Nombre de Pages',
     borderBottomColor: '#F67362',
   },
 
@@ -49,7 +49,7 @@ export const AboutElements = [
     id: '2',
     icone: svg.victory,
     level: 16,
-    designation: 'Great Aword',
+    designation: 'Grand Prix',
     borderBottomColor: '#55DFFC',
   },
 
@@ -57,7 +57,7 @@ export const AboutElements = [
     id: '3',
     icone: svg.grade,
     level: 1000,
-    designation: 'Active Readers',
+    designation: 'Lecteurs actifs',
     borderBottomColor: '#9775F9',
   },
 ]
@@ -67,7 +67,7 @@ export const AuthorElements = [
     id: '1',
     grade: 'Harvard University',
     since: '2012',
-    description: 'I am completed master degree from Harvard university 2012',
+    description: "J'ai obtenu un master à l'université de Harvard en 2012.",
     borderBottomColor: '#F67362',
   },
 
@@ -75,7 +75,7 @@ export const AuthorElements = [
     id: '2',
     grade: 'Newyork University',
     since: '2016',
-    description: 'I am completed master degree from Newyork university 2016',
+    description: "J'ai obtenu un master à l'université de Newyork en 2016.",
     borderBottomColor: '#55DFFC',
   },
 ]
@@ -83,27 +83,28 @@ export const AuthorElements = [
 export const CustomersElements = [
   {
     id: '1',
-    text: "It is the greatest media and web development agency i've ever. easy user interface to the powerfull servives To do it , so I give him 5 out of 5 for there good and amazing services. Thanks you",
+    text: "C'est la meilleure agence de médias et de développement web que j'ai jamais connue. L'interface utilisateur est facile à utiliser et les services sont puissants, donc je lui donne 5 sur 5 pour ses bons et incroyables services. Merci à vous",
     name: 'John R Michal',
     cover:
       'https://landing.zytheme.com/ebookyo/assets/images/testimonials/avatar-1.png',
-    star: 'https://landing.zytheme.com/ebookyo/assets/images/testimonials/4-stars.svg',
+    star: 'https://landing.zytheme.com/ebookyo/assets/images/testimonials/5-stars.svg',
     borderBottomColor: '#F67362',
   },
 
   {
     id: '2',
-    text: 'My project was a simple task, but the persistence of kolaso web development team turend an very awesome and grear project make me very happy Thanks you so much for this project.',
+    text: "Mon projet était une tâche simple, mais la persistance de l'équipe de développement web de kolaso a abouti à un projet très impressionnant et génial, ce qui me rend très heureux. Merci beaucoup pour ce projet.",
     name: 'Micheal Lewis',
     cover:
       'https://landing.zytheme.com/ebookyo/assets/images/testimonials/avatar-2.png',
-    star: 'https://landing.zytheme.com/ebookyo/assets/images/testimonials/5-stars.svg',
+    star: 'https://landing.zytheme.com/ebookyo/assets/images/testimonials/4-stars.svg',
     borderBottomColor: '#55DFFC',
   },
 
   {
     id: '3',
-    text: "i am realy very proud of beeing first use this project, fantastice and awesome design, Well code and Extremely good work. Quick reply and very professional for just don't Know to say for this team.",
+
+    text: "Je suis vraiment très fier d'avoir été le premier à utiliser ce projet, fantastique et impressionnant design, bien codé et extrêmement bon travail. La réponse est rapide et très professionnelle, je ne sais pas ce qu'il faut dire pour cette équipe.",
     name: 'Bronston Milton',
     cover:
       'https://landing.zytheme.com/ebookyo/assets/images/testimonials/avatar-3.png',
@@ -115,33 +116,33 @@ export const CustomersElements = [
 export const FAQElements = [
   {
     id: '1',
-    question: 'What Should Be Included In A Book ?',
+    question: 'Que doit contenir un livre ?',
     answer:
-      'With any financial product that you buy, it is important that you know you are getting the best advice from a reputable company as often you will have to provide sensitive information.',
+      "Pour tout produit financier que vous achetez, il est important que vous sachiez que vous obtenez les meilleurs conseils d'une société réputée, car vous devrez souvent fournir des informations sensibles.",
     leftBorderColor: '#F57565',
   },
 
   {
     id: '2',
-    question: "I'm Looking For The Best Novels List ?",
+    question: 'Je cherche la liste des meilleurs romans ?',
     answer:
-      'With any financial product that you buy, it is important that you know you are getting the best advice from a reputable company as often you will have to provide sensitive information.',
+      "Pour tout produit financier que vous achetez, il est important que vous sachiez que vous obtenez les meilleurs conseils d'une société réputée, car vous devrez souvent fournir des informations sensibles.",
     leftBorderColor: '#9EEBE6',
   },
 
   {
     id: '3',
-    question: 'What Are The Five Parts Of A Book?',
+    question: 'Quelles sont les cinq parties du livre ?',
     answer:
-      'With any financial product that you buy, it is important that you know you are getting the best advice from a reputable company as often you will have to provide sensitive information.',
+      "Pour tout produit financier que vous achetez, il est important que vous sachiez que vous obtenez les meilleurs conseils d'une société réputée, car vous devrez souvent fournir des informations sensibles.",
     leftBorderColor: '#5B96F4',
   },
 
   {
     id: '4',
-    question: 'What’s The Next Book In This Series?',
+    question: 'Quel est le prochain livre de la série ?',
     answer:
-      'With any financial product that you buy, it is important that you know you are getting the best advice from a reputable company as often you will have to provide sensitive information.',
+      "Pour tout produit financier que vous achetez, il est important que vous sachiez que vous obtenez les meilleurs conseils d'une société réputée, car vous devrez souvent fournir des informations sensibles.",
     leftBorderColor: '#9775F9',
   },
 ]
@@ -165,37 +166,37 @@ export const OffreElements = [
 export const NavMenu = [
   {
     id: '1',
-    title: 'Home',
-    href: '/',
+    title: 'Accueil',
+    href: '#',
   },
 
   {
-    id: '2',
-    title: 'Features',
+    id: 'feature',
+    title: 'Caractéristiques',
     href: '#feature',
   },
 
   {
-    id: '3',
-    title: 'About',
+    id: 'about',
+    title: 'à Propos',
     href: '#about',
   },
 
   {
-    id: '4',
-    title: 'Author',
+    id: 'author',
+    title: 'Auteur',
     href: '#author',
   },
 
   {
-    id: '5',
-    title: 'Testimonials',
+    id: 'testimonials',
+    title: 'Témoignages',
     href: '#testimonials',
   },
 
   {
-    id: '6',
-    title: 'Pricing',
+    id: 'pricing',
+    title: 'Tarification',
     href: '#pricing',
   },
 ]

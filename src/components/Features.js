@@ -99,10 +99,10 @@ function Features() {
       <Section id="feature">
         <div className="container">
           <div className="row justify-content-center mb-5">
-            <SectionTitle>Book Features</SectionTitle>
+            <SectionTitle>Caractéristiques du livre</SectionTitle>
             <SubTitleSection className="col-12 col-md-8 col-lg-6 col-xxl-5">
-              This should be used to tell a story and let your users know a
-              little more about your product or service.
+              Il doit être utilisé pour raconter une histoire et permettre à vos
+              utilisateurs d'en savoir un peu plus sur votre produit ou service.
             </SubTitleSection>
           </div>
           <div className="row">

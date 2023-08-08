@@ -30,7 +30,7 @@ function DownloadBtn({ BouttonStyle = Boutton }) {
   return (
     <React.Fragment>
       <div>
-        <BouttonStyle>Download Now</BouttonStyle>
+        <BouttonStyle>Télécharger</BouttonStyle>
       </div>
     </React.Fragment>
   )

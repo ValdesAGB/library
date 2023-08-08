@@ -43,6 +43,7 @@ const Image = styled.img`
 `
 
 const Title = styled.h3`
+  text-transform: capitalize;
   color: ${color.ctaBtnColor};
   font-size: 30px;
   line-height: 45px;
@@ -110,15 +111,15 @@ function CTA() {
               </div>
               <div className="col-12 col-md-7">
                 <Title>
-                  Want To Read This book ? <br /> Get A Free Preview.
+                  Vous voulez lire ce livre ? <br /> Obtenez un aperçu gratuit.
                 </Title>
                 <Formulaire className="input-group mb-3">
                   <Input
-                    type="text"
+                    type="mail"
                     className="form-control"
-                    placeholder="Enter E-mail Address"
+                    placeholder="Entrez l'Adresse Mail"
                   />
-                  <Button>Download</Button>
+                  <Button>Télécharger</Button>
                 </Formulaire>
               </div>
             </div>

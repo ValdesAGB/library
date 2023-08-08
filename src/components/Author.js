@@ -113,16 +113,15 @@ function Author() {
                 />
               </CoverContainer>
               <div className="col-12 col-lg">
-                <SectionTitle>About The Author</SectionTitle>
+                <SectionTitle>À Propos de l'Auteur</SectionTitle>
                 <SubTitleSection>
-                  The author name is Herry Khan. bron in 1930, has been in
-                  volved in gliding for more than fifty years. with the gold C
-                  badge and two dia monds, he has flown about one hundred,
-                  diffrerent types of sailplane, including twen ty of those
-                  described in this work.
+                  L'auteur s'appelle Herry Khan. Né en 1930, il pratique le vol
+                  à voile depuis plus de cinquante ans. Avec l'insigne C d'or et
+                  deux diamants, il a piloté une centaine de types de planeurs
+                  différents, dont vingt de ceux décrits dans cet ouvrage.
                 </SubTitleSection>
                 <div className="row">
-                  <ContentTitle>Education Backgroud</ContentTitle>
+                  <ContentTitle>Parcours Scolaire</ContentTitle>
                   {AuthorElements.map(
                     ({ id, grade, since, description, borderBottomColor }) => (
                       <ContentContainer key={id} className="col-12 col-sm">
@@ -130,7 +129,7 @@ function Author() {
                           <div>
                             <Grade>{grade}</Grade>
                             <Since color={borderBottomColor}>
-                              Since {since}
+                              Depuis {since}
                             </Since>
                             <Description>{description}</Description>
                           </div>
